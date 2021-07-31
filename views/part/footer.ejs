@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        footer {
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            height: auto;
+            padding: 20px 100px;
+            background: #282C2F;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            color: #fff;
+        }
+        
+        footer .container .foot {
+            margin-right: 30px;
+        }
+        
+        footer .container .about {
+            width: 40%;
+        }
+        
+        footer .container .product {
+            width: calc(35% - 60px);
+            margin-right: 0 !important;
+        }
+        
+        footer .container .social {
+            width: 25%;
+            color: #fff;
+        }
+        
+        @media(max-width: 991px) {
+            footer .container {
+                flex-direction: column;
+            }
+            footer {
+                padding: 40px;
+            }
+            footer .container .foot {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+            footer .container .social {
+                width: 100%;
+            }
+            footer .container .about {
+                width: 100%;
+            }
+            footer .container .product {
+                width: 100%
+            }
+        }
+        
+        footer .container h2 {
+            margin-bottom: 15px;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        footer p {
+            color: #999;
+            margin-bottom: 30px;
+        }
+        
+        footer ul li {
+            list-style: none;
+        }
+        
+        footer .product ul li a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            color: #fff;
+            background: #33383B;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        
+        footer .social ul li a {
+            color: #999;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        
+        footer .social ul li a:hover {
+            color: #fff;
+        }
+        
+        footer .about i {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: #33383B;
+            align-items: center;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+            color: #fff;
+        }
+        
+        footer .about a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            line-height: 50px;
+        }
+        
+        footer .about a span {
+            margin-left: 10px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="container">
+            <div class="about foot">
+                <h2>About Us</h2>
+                <div class="contain">
+
+                    <a href=""><i class="fa fa-map-marker"></i><span class="edit">799 Nguyễn Văn Linh, Tân Phú, quận 7, TP.HCM</span></a>
+
+                    <a href=""><i class="fa fa-phone"></i><span>+1345678</span></a>
+                    <a href=""><i class="fa fa-envelope"></i><span style="color: #587DC8;">chamsockh@gmail.com</span></a>
+                </div>
+
+            </div>
+            <div class="social foot">
+                <h2>Information</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Prices</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="product foot">
+                <h2>Contact Info </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Soluta excepturi, itaque porro quas temporibus nihil distinctio eaque, pariatur et, magni voluptatem harum velit quam nesciunt, consectetur minima cumque debitis fugiat?</p>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
